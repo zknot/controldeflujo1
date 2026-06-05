@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Depósito - Control en Vivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Monitor de Depósito</h1>
+    </header>
+
+    <div class="tablero">
+        <!-- COLUMNA 1: EN PREPARACIÓN -->
+        <div class="columna preparacion">
+            <div class="columna-titulo">En Preparación</div>
+            <div class="lista-pedidos" id="col-preparacion"></div>
+        </div>
+
+        <!-- COLUMNA 2: PEDIDOS PARA REVISAR -->
+        <div class="columna revisar">
+            <div class="columna-titulo">Pedidos para revisar</div>
+            <div class="lista-pedidos" id="col-revisar"></div>
+        </div>
+
+        <!-- COLUMNA 3: ¡LISTOS! -->
+        <div class="columna listo">
+            <div class="columna-titulo">Para Facturar</div>
+            <div class="lista-pedidos" id="col-listo"></div>
+        </div>
+
+        <!-- COLUMNA 4: HISTORIAL RECIENTE -->
+        <div class="columna despachado">
+            <div class="columna-titulo">Para Despachar</div>
+            <div class="lista-pedidos" id="col-despachado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
